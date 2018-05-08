@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".login_success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".txt_confirm_email"
+      redirect_to root_url
     else
       render :new
     end
@@ -28,11 +28,15 @@ class UsersController < ApplicationController
   def edit; end
 
   def update
-    if @user.update_attributes user_params
-      flash[:success] = t ".update_success"
-      redirect_to @user
+    user = User.find_by email: params[:email]
+    if user && !user.activated? && user.authenticated?(:activation, params[:id])
+      user.activate
+      log_in user
+      flash[:success] = t ".txt_account_active"
+      redirect_to user
     else
-      render :edit
+      flash[:danger] = t ".txt_invalid_active_link"
+      redirect_to root_url
     end
   end
 
