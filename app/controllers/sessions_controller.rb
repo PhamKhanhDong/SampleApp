@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
         redirect_back_or user
       else
         message  = t ".txt_error_active"
-        message += t ".tx_check_email"
+        message += t ".txt_check_email"
         flash[:warning] = message
         redirect_to root_url
       end

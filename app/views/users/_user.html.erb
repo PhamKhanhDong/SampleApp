@@ -1,5 +1,6 @@
 <li>
   <%= gravatar_for user, size: Settings.user.name.max_length %>
+
   <%= link_to user.name, user %>
   <% if current_user.admin? && !current_user?(user) %>
     | <%= link_to t(".btn_delete"), user, method: :delete,

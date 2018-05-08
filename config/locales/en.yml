@@ -20,6 +20,13 @@ en:
       txt_change: "Change"
       txt_login_false: "Please login"
       btn_create_acount: "Create my account"
+    edit:
+      title_edit: "Edit user"
+      title_page: "Update your profile"
+      txt_name: "Name"
+      txt_email: "Email"
+      txt_password: "Password"
+      txt_comfirm: "Confirmation"
       btn_save: "save"
       txt_change: "Change"
       txt_login_false: "Please login"
@@ -48,15 +55,36 @@ en:
       btn_login: "Login"
       title_login: "Login"
       remember_login: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       invalid_user: "Invalid email/password combination"
       txt_remember_login: "Remember me on this computer"
       txt_error_active: "Account not activated."
-      tx_check_email: "Check your email for the activation link."
+      txt_check_email: "Check your email for the activation link."
   acount_activations:
     edit:
-      acount_success: "Account activated!"
-      acount_danger: "Invalid activation link"
+      account_success: "Account activated!"
+      account_danger: "Invalid activation link"
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      lab_email: "email"
+      btn_submit: "Submit"
+    create:
+      flash_info: "Email sent with password reset instructions"
+      flash_danger: "Email address not found"
+    update:
+      error_pass_empty: "can't be empty"
+      reset_pass_success: "Password has been reset."
+    check_expiration:
+      error_pass_expire: "Password reset has expired."
+    edit:
+      title: "Reset password"
+      lab_password: "Password:"
+      lab_comfirm: "Confirmation:"
+      btn_update: "Update password"
+    get_user:
+      user_not_found: "User not found"
   layouts:
     footer:
       the: "The"
@@ -96,3 +124,12 @@ en:
       lorem2: "Ruby on Rails Tutorial"
       lorem3: "sample application."
       signup_btn_text: "Sign up now!"
+  user_mailer:
+    account_activation: "Account activation"
+    password_reset:
+      subject_email: "Password reset"
+      note_click_link: "To reset your password click the link below:"
+      note_expire_reset: "This link will expire in two hours."
+      note_ignone_email: "If you did not request your password to be reset,
+       please ignore this email and your password will stay as it is."
+      title: "Password reset"

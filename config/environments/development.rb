@@ -69,6 +69,7 @@ Rails.application.configure do
     :user_name      => ENV["SMTP_email"],
     :password       => ENV["SMTP_password"],
     :domain         => ENV["SMTP_domain"],
+
     :enable_starttls_auto => true
   }
 end
