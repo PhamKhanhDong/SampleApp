@@ -1,24 +1,26 @@
 en:
   users:
     show:
-      txt_user_not_found: "User not found"
+      user_not_found: "User not found"
     new:
       signup_title: "Sign up"
-      txt_name: "Name"
-      txt_email: "Email"
-      txt_password: "Password"
-      txt_comfirm: "Confirmation"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      comfirm: "Confirmation"
       btn_create_acount: "Create my account"
   sessions:
     new:
-      txt_email: "Email"
-      txt_password: "Password"
-      txt_new_user: "New user?"
+      email: "Email"
+      password: "Password"
+      new_user: "New user?"
       signup_btn_text: "Singup"
       btn_login: "Login"
       title_login: "Login"
+      remember_login: "Remember me on this computer"
     create:
       invalid_user: "Invalid email/password combination"
+
   layouts:
     footer:
       the: "The"
@@ -35,12 +37,12 @@ en:
       link_home: "Home"
       link_help: "Help"
       link_login: "Login"
-      txt_accout: "Acount"
+      accout: "Acount"
       title_login: "Login"
-      txt_logout: "Logout"
-      txt_setting: "Setting"
-      txt_profile: "Profile"
-      txt_user: "Users"
+      logout: "Logout"
+      setting: "Setting"
+      profile: "Profile"
+      user: "Users"
   shared:
     error_messages:
       count_error: "The form contains"
@@ -55,5 +57,6 @@ en:
       home_title: "Home"
       webcome_sample_app: "Welcome to the Sample App"
       lorem1: "This is the home page for the"
+      lorem2: "Ruby on Rails Tutorial"
       lorem3: "sample application."
       signup_btn_text: "Sign up now!"
