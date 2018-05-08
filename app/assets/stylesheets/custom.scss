@@ -149,10 +149,10 @@ aside {
 /* forms */
 
 input, textarea, select, .uneditable-input {
+  @include box_sizing;
   border: 1px solid $silver;
   margin-bottom: 15px;
   width: 100%;
-  @include box_sizing;
 }
 
 input {
@@ -175,14 +175,28 @@ input {
 }
 
 .checkbox {
+  margin-bottom: 10px;
+  margin-top: -10px;
   span {
     font-weight: normal;
     margin-left: 20px;
   }
-  .remember_me {
-    margin-left: 0 !important;
-    width: auto;
-  }
+
 }
 
+#session_remember_me {
+  margin-left: 0;
+  width: auto;
+}
 
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    border-bottom: 1px solid $gray-lighter;
+    overflow: auto;
+    padding: 10px 0;
+  }
+}
