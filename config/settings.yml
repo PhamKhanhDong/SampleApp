@@ -9,6 +9,10 @@ user:
   password_reset_expired:
     time_reset: 2
   microposts_limit: 5
+  following:
+    limit: 5
+  follower:
+    limit: 5
 users_helper:
   gravatar_size: 80
 micropost:

@@ -46,6 +46,16 @@ en:
       detele_success: "User deleted"
     update:
       update_success: "Profile updated"
+    unfollow:
+      unfollow: "Unfollow"
+    follow:
+      follow: "Follow"
+    following:
+      title: "Following"
+      view_profile: "view my profile"
+      microposts: "Microposts:"
+    followers:
+      title: "Followers"
   sessions:
     new:
       txt_email: "Email"
@@ -187,3 +197,6 @@ en:
     destroy:
       error: "Deleted error"
       success: "Deleted Success"
+  relation_ships:
+    action_follow_unfollow:
+      user_not_found: "User not found"
