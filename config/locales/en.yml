@@ -9,6 +9,16 @@ en:
       txt_password: "Password"
       txt_comfirm: "Confirmation"
       btn_create_acount: "Create my account"
+  sessions:
+    new:
+      txt_email: "Email"
+      txt_password: "Password"
+      txt_new_user: "New user?"
+      signup_btn_text: "Singup"
+      btn_login: "Login"
+      title_login: "Login"
+    create:
+      invalid_user: "Invalid email/password combination"
   layouts:
     footer:
       the: "The"
@@ -25,6 +35,12 @@ en:
       link_home: "Home"
       link_help: "Help"
       link_login: "Login"
+      txt_accout: "Acount"
+      title_login: "Login"
+      txt_logout: "Logout"
+      txt_setting: "Setting"
+      txt_profile: "Profile"
+      txt_user: "Users"
   shared:
     error_messages:
       count_error: "The form contains"
