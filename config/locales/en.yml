@@ -1,22 +1,43 @@
 en:
-  base_title: "Ruby on Rails Tutorial Sample App"
-  webcome_sample_app: "Welcome to the Sample App"
-  lorem1: "This is the home page for the"
-  lorem2: "Ruby on Rails Tutorial"
-  lorem3: "sample application."
-  signup_btn_text: "Sign up now!"
-  alt_rail_logo: "Rails logo"
-  sample_app_logo: "sample app"
-  link_home: "Home"
-  link_help: "Help"
-  link_login: "Login"
-  home_title: "Home"
-  about_title: "About"
-  contact_title: "Contact"
-  help_title: "Help"
-  the: "THe"
-  by: "by"
-  author_rails: "Michael Hartl"
-  new_title: "New"
-  signup_title: "Sign up"
-  lorem_singup: "This will be a signup page for new users."
+  users:
+    show:
+      txt_user_not_found: "User not found"
+    new:
+      signup_title: "Sign up"
+      txt_name: "Name"
+      txt_email: "Email"
+      txt_password: "Password"
+      txt_comfirm: "Confirmation"
+      btn_create_acount: "Create my account"
+  layouts:
+    footer:
+      the: "The"
+      by: "by"
+      lorem2: "Ruby on Rails Tutorial"
+      author_rails: "Michael Hartl"
+      about_title: "About"
+      contact_title: "Contact"
+      new_title: "New"
+    application:
+      base_title: "Ruby on Rails Tutorial Sample App"
+    header:
+      sample_app_logo: "sample app"
+      link_home: "Home"
+      link_help: "Help"
+      link_login: "Login"
+  shared:
+    error_messages:
+      count_error: "The form contains"
+  static_pages:
+    about:
+      about_title: "About"
+    contact:
+      contact_title: "Contact"
+    help:
+      help_title: "Help"
+    home:
+      home_title: "Home"
+      webcome_sample_app: "Welcome to the Sample App"
+      lorem1: "This is the home page for the"
+      lorem3: "sample application."
+      signup_btn_text: "Sign up now!"
