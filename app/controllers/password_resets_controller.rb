@@ -14,7 +14,7 @@ class PasswordResetsController < ApplicationController
       flash[:info] = t ".flash_info"
       redirect_to root_url
     else
-      flash.now[:danger] = t "flash_danger"
+      flash.now[:danger] = t ".flash_danger"
       render :new
     end
   end

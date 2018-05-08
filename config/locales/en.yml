@@ -2,6 +2,7 @@ en:
   users:
     show:
       user_not_found: "User not found"
+      micropost_title: "Microposts"
     new:
       signup_title: "Sign up"
       name: "Name"
@@ -24,6 +25,29 @@ en:
       title_edit: "Edit user"
       title_page: "Update your profile"
       txt_name: "Name"
+      txt_email: "Email"
+      txt_password: "Password"
+      txt_comfirm: "Confirmation"
+      btn_save: "save"
+      txt_change: "Change"
+      txt_login_false: "Please login"
+      txt_account_active: "Account activated!"
+      txt_invalid_active_link: "Invalid activation link"
+    index:
+      title_index_user: "All user"
+      txt_login_false: "Please login"
+    user:
+      btn_delete: "delete"
+      txt_you_sure: "you sure"
+    create:
+      login_success: "Welcome to the Sample App!"
+      txt_confirm_email: "Please check your email to activate your account."
+    destroy:
+      detele_success: "User deleted"
+    update:
+      update_success: "Profile updated"
+  sessions:
+    new:
       txt_email: "Email"
       txt_password: "Password"
       txt_comfirm: "Confirmation"
@@ -85,6 +109,15 @@ en:
       btn_update: "Update password"
     get_user:
       user_not_found: "User not found"
+  microposts:
+    micropost:
+      post: "Post"
+      ago: "ago"
+      you_sure: "you sure?"
+    create:
+      success: "Micropost created!"
+    destroy:
+      success: "Micropost deleted"
   layouts:
     footer:
       the: "The"
@@ -110,6 +143,12 @@ en:
   shared:
     error_messages:
       count_error: "The form contains"
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
   static_pages:
     about:
       about_title: "About"
@@ -124,8 +163,14 @@ en:
       lorem2: "Ruby on Rails Tutorial"
       lorem3: "sample application."
       signup_btn_text: "Sign up now!"
+      micropost_feed: "Micropost Feed"
   user_mailer:
-    account_activation: "Account activation"
+    account_activation:
+      account_activation: "Account activation"
+      active: "Active"
+      welcome: "Welcome to the Sample App! Click on the link below to activate
+       your account:"
+      title: "Sample App"
     password_reset:
       subject_email: "Password reset"
       note_click_link: "To reset your password click the link below:"
@@ -133,3 +178,12 @@ en:
       note_ignone_email: "If you did not request your password to be reset,
        please ignore this email and your password will stay as it is."
       title: "Password reset"
+  application:
+    logged_in_user:
+      please_login: "Please log in."
+  microposts_controller:
+    correct_user:
+      micropost_not_found: "Micropost not found"
+    destroy:
+      error: "Deleted error"
+      success: "Deleted Success"
