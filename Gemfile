@@ -1,5 +1,7 @@
 source "https://rubygems.org"
+
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
+
 ruby "2.4.1"
 
 gem "bcrypt", "3.1.11"
@@ -8,6 +10,7 @@ gem "bootstrap-sass"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "jbuilder", "~> 2.5"
+gem "jquery-rails"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.0"
 gem "sass-rails", "~> 5.0"
@@ -32,4 +35,5 @@ group :test do
   gem "rubocop-rspec", "~> 1.22.0", require: false
   gem "selenium-webdriver"
 end
+
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
