@@ -5,7 +5,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
-    flash.now[:warning] = t ".txt_user_not_found" unless @user
+    flash.now[:warning] = t ".user_not_found" unless @user
   end
 
   def create
