@@ -10,14 +10,19 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, length: {minimum: Settings.user.password.min_length}
 
-  def User.digest string
-    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
-      BCrypt::Engine.cost
+  def self.digest string
+    cost = BCrypt::Engine.cost
+    cost = BCrypt::Engine::MIN_COST if ActiveModel::SecurePassword.min_cost
     BCrypt::Password.create string, cost: cost
   end
 
-  def User.new_token
+  def self.new_token
     SecureRandom.urlsafe_base64
+  end
+
+  def self.getAllUser params
+    User.select(:id, :name, :email).paginate(page: params[:page])
+      .limit(Settings.user.limit_page).order "name ASC"
   end
 
   def remember

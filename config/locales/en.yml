@@ -9,6 +9,29 @@ en:
       password: "Password"
       comfirm: "Confirmation"
       btn_create_acount: "Create my account"
+    edit:
+      title_edit: "Edit user"
+      title_page: "Update your profile"
+      txt_name: "Name"
+      txt_email: "Email"
+      txt_password: "Password"
+      txt_comfirm: "Confirmation"
+      btn_save: "save"
+      txt_change: "Change"
+      txt_login_false: "Please login"
+    index:
+      title_index_user: "All user"
+      txt_login_false: "Please login"
+    user:
+      btn_delete: "delete"
+      txt_you_sure: "you sure"
+    create:
+      login_success: "Welcome to the Sample App!"
+    destroy:
+      detele_success: "User deleted"
+      detele_error: "User not found"
+    update:
+      update_success: "Profile updated"
   sessions:
     new:
       email: "Email"
