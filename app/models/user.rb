@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   before_save :downcase_email
   attr_accessor :remember_token, :activation_token, :reset_token
   before_create :create_activation_digest
@@ -24,6 +25,11 @@ class User < ApplicationRecord
   def self.getAllUser params
     User.select(:id, :name, :email).paginate(page: params[:page])
       .limit(Settings.user.limit_page).order "name ASC"
+  end
+
+  def self.getAllMicropost user, params
+    user.microposts.paginate(page: params[:page])
+      .limit Settings.user.microposts_limit
   end
 
   def remember
@@ -61,6 +67,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < (Settings.user.password_reset_expired.time_reset).hours.ago
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private
