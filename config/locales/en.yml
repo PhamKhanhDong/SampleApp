@@ -19,6 +19,12 @@ en:
       btn_save: "save"
       txt_change: "Change"
       txt_login_false: "Please login"
+      btn_create_acount: "Create my account"
+      btn_save: "save"
+      txt_change: "Change"
+      txt_login_false: "Please login"
+      txt_account_active: "Account activated!"
+      txt_invalid_active_link: "Invalid activation link"
     index:
       title_index_user: "All user"
       txt_login_false: "Please login"
@@ -27,6 +33,7 @@ en:
       txt_you_sure: "you sure"
     create:
       login_success: "Welcome to the Sample App!"
+      txt_confirm_email: "Please check your email to activate your account."
     destroy:
       detele_success: "User deleted"
       detele_error: "User not found"
@@ -43,7 +50,13 @@ en:
       remember_login: "Remember me on this computer"
     create:
       invalid_user: "Invalid email/password combination"
-
+      txt_remember_login: "Remember me on this computer"
+      txt_error_active: "Account not activated."
+      tx_check_email: "Check your email for the activation link."
+  acount_activations:
+    edit:
+      acount_success: "Account activated!"
+      acount_danger: "Invalid activation link"
   layouts:
     footer:
       the: "The"
